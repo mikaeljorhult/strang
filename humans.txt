@@ -1,15 +1,15 @@
-# humanstxt.org/
-# The humans responsible & technology colophon
+/* TEAM */
+	Name: Mikael Jorhult
+	Role: Developer
+	E-mail: mikael@jorhult.se
+	Twitter: @mikaejorhult
+	Location: Falun, Sweden
 
-# TEAM
+/* THANKS */
+	
 
-    <name> -- <role> -- <twitter>
-
-# THANKS
-
-    <name>
-
-# TECHNOLOGY COLOPHON
-
-    HTML5, CSS3
-    jQuery, Modernizr
+/* SITE */
+	Last update: 2013-07-09
+	Language: English
+	Doctype: HTML5
+	IDE: Dreamweaver CC
