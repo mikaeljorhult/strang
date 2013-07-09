@@ -1,0 +1,8 @@
+/*------------------------------------*\
+	$FOOTER
+\*------------------------------------*/
+.main-footer {
+	@include margin-leader(2);
+	@include padding-leader(1);
+	@include margin-trailer(1);
+}

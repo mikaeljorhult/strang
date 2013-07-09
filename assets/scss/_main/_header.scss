@@ -1,0 +1,7 @@
+/*------------------------------------*\
+	$HEADER
+\*------------------------------------*/
+.main-header {
+	@include margin-leader(1);
+	@include margin-trailer(1);
+}

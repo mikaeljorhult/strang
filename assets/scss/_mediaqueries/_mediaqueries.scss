@@ -1,0 +1,26 @@
+/*------------------------------------*\
+	$MEDIA QUERIES
+\*------------------------------------*/
+// Larger smartphones
+@media only screen and (min-width: 480px) {
+	@include grid-setup($namespace: column);
+	
+	.mobile-only {
+		display: none;
+	}
+}
+
+// Tablets
+@media only screen and (min-width: 768px) {
+	@include grid-setup($namespace: mq1-column);
+}
+
+// Small desktops
+@media only screen and (min-width: 1025px) {
+	@include grid-setup($namespace: mq2-column);
+}
+
+// Larger desktops
+@media only screen and (min-width: 1200px) {
+	@include grid-setup($namespace: mq3-column);
+}

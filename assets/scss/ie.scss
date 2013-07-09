@@ -1,0 +1,13 @@
+@import "config";
+@import "_mixins/grid";
+
+@include grid-fix-oldie();
+
+@include grid-setup($namespace: mq1-col);
+@include grid-setup($namespace: mq2-col);
+@include grid-setup($namespace: mq3-col);
+
+@include grid-oldie($namespace: "oldie .col");
+@include grid-oldie($namespace: "oldie .mq1-col");
+@include grid-oldie($namespace: "oldie .mq2-col");
+@include grid-oldie($namespace: "oldie .mq3-col");
