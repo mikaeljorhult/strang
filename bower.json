@@ -1,0 +1,16 @@
+{
+	"name": "verbose-framework",
+	"version": "2.0.0",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"components",
+		"bower_components",
+		"test",
+		"tests"
+	]
+	"dependencies": {
+		"jquery": "latest",
+		"modernizr": "latest"
+	}
+}
