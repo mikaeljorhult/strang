@@ -11,6 +11,8 @@
 	]
 	"dependencies": {
 		"jquery": "latest",
-		"modernizr": "latest"
+		"modernizr": "latest",
+		"backbone": "latest",
+		"underscore": "latest"
 	}
 }
