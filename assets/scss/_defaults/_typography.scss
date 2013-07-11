@@ -10,34 +10,40 @@ body {
 }
 
 a {
-	@include link-colors( $brand-color-3, shade($brand-color-3, 25), shade($brand-color-3, 50), $brand-color-3 );
+	@include link-colors( $brand-color-3, shade( $brand-color-3, 25 ), shade( $brand-color-3, 50 ), $brand-color-3 );
 	@include transition( color 0.1s, background-color 0.2s );
 	
 	text-decoration: none;
 }
 
-h1, .alpha {
-	@include adjust-font-size-to( $font-bigger * 1px );
+h1,
+.alpha {
+	@include adjust-font-size-to( $font-size-1 * 1px );
 }
 
-h2, .beta {
-	@include adjust-font-size-to( $font-larger * 1px );
+h2,
+.beta {
+	@include adjust-font-size-to( $font-size-2 * 1px );
 }
 
-h3, .gamma {
-	@include adjust-font-size-to( $font-large * 1px );
+h3,
+.gamma {
+	@include adjust-font-size-to( $font-size-3 * 1px );
 }
 
-h4, .delta {
-	@include adjust-font-size-to( $font-medium * 1px );
+h4,
+.delta {
+	@include adjust-font-size-to( $font-size-4 * 1px );
 }
 
-h5, .epsilon {
-	@include adjust-font-size-to( $font-size * 1px );
+h5,
+.epsilon {
+	@include adjust-font-size-to( $font-size-5 * 1px );
 }
 
-h6, .zeta {
-	@include adjust-font-size-to( $font-small-uppercase * 1px );
+h6,
+.zeta {
+	@include adjust-font-size-to( $font-size-6-uppercase * 1px );
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
 }
@@ -58,15 +64,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .eta {
-	font-size: em($font-small, $font-size);
-	line-height: em(21, $font-small);
+	font-size: em( $font-size-5, $font-size );
+	line-height: em( 21, $font-size-5 );
 
 }
+
 .theta {
-	font-size: em($font-smaller, $font-size);
-	line-height: em(16, $font-smaller);
+	font-size: em( $font-size-6, $font-size );
+	line-height: em( 16, $font-size-6 );
 }
-
-
-
-
