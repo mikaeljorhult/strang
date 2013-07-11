@@ -1,4 +1,4 @@
-@mixin grid-setup($namespace) {
+@mixin grid-setup( $namespace ) {
 	.#{$namespace}-100	{ width: 100%; }
 	.#{$namespace}-90	{ width: 90%; }
 	.#{$namespace}-80	{ width: 80%; }
@@ -53,7 +53,7 @@
 	}
 }
 
-@mixin grid-adjust-wrap-width($width: 95%) {
+@mixin grid-adjust-wrap-width( $width: 95% ) {
 	.wrapper {
 		width: $width;
 
@@ -61,52 +61,4 @@
 			width: auto;
 		}
 	}
-}
-
-/*--- IE6-7 ---*/
-@mixin grid-fix-oldie {
-	.oldie {
-		.wrapper {
-			width: $grid-width;
-		}
-
-		.grids {
-			margin-left: 0;
-			
-			> * {
-				padding: 0;
-				margin-left: 5%;
-				
-				&:first-child {
-					margin-left: 0;
-				}
-			}
-		}
-	}
-}
-
-@mixin grid-oldie($namespace) {
-	.#{$namespace}-100	{ width: 99.95%; }
-	.#{$namespace}-75	{ width: 74.95%; }
-	.#{$namespace}-50	{ width: 47.45%; }
-	.#{$namespace}-25	{ width: 19.95%; }
-	.#{$namespace}-66	{ width: 64.95%; }
-	.#{$namespace}-33	{ width: 29.55%; }
-	
-	.#{$namespace}-100	{ width: 99.95%; }
-	.#{$namespace}-90	{ width: 90%; }
-	.#{$namespace}-80	{ width: 80%; }
-	.#{$namespace}-75	{ width: 74.95%; }
-	.#{$namespace}-80	{ width: 70%; }
-	.#{$namespace}-80	{ width: 60%; }
-	.#{$namespace}-50	{ width: 50%; }
-	.#{$namespace}-80	{ width: 40%; }
-	.#{$namespace}-80	{ width: 30%; }
-	.#{$namespace}-25	{ width: 25%; }
-	.#{$namespace}-80	{ width: 20%; }
-	.#{$namespace}-80	{ width: 10%; }
-	.#{$namespace}-66	{ width: 66.666%; }
-	.#{$namespace}-33	{ width: 33.333%; }
-	.#{$namespace}-show	{ display: block; }
-	.#{$namespace}-hide	{ display: none; }
 }
