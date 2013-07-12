@@ -1,49 +1,28 @@
 .alignnone {
-    margin: 0.25em 1em 1em 0;
+	margin: 0.25em 1em 1em 0;
 }
 
-.aligncenter,
-div.aligncenter {
-    display: block;
-    margin: 0.25em auto 0.25em auto;
-}
-
-.alignright {
-    float: right;
-    margin: 0.25em 0 1em 1em;
+.aligncenter {
+	display: block;
+	margin: 0.25em auto 0.25em auto;
 }
 
 .alignleft {
-    float: left;
-    margin: 0.25em 1em 1em 0;
+	float: left;
+	margin: 0.25em 1em 1em 0;
 }
 
-a img.alignright {
-    float: right;
-    margin: 0.25em 0 1em 1em;
-}
-
-a img.alignnone {
-    margin: 0.25em 1em 1em 0;
-}
-
-a img.alignleft {
-    float: left;
-    margin: 0.25em 1em 1em 0;
-}
-
-a img.aligncenter {
-    display: block;
-    margin-left: auto;
-    margin-right: auto
+.alignright {
+	float: right;
+	margin: 0.25em 0 1em 1em;
 }
 
 .wp-caption {
-    max-width: 96%;
-    padding: 0.25 0.25em 0.75em;
+	max-width: 96%;
+	padding: 0.25 0.25em 0.75em;
 	background: #fff;
-    border: 1px solid #f0f0f0;
-    text-align: center;
+	border: 1px solid #f0f0f0;
+	text-align: center;
 	
 	&.alignnone {
 		margin: 0.25em 1em 1em 0;
