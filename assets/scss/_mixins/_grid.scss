@@ -1,20 +1,10 @@
 @mixin grid-setup( $namespace ) {
-	.#{$namespace}-100	{ width: 100%; }
-	.#{$namespace}-90	{ width: 90%; }
-	.#{$namespace}-80	{ width: 80%; }
-	.#{$namespace}-75	{ width: 75%; }
-	.#{$namespace}-70	{ width: 70%; }
-	.#{$namespace}-60	{ width: 60%; }
-	.#{$namespace}-50	{ width: 50%; }
-	.#{$namespace}-40	{ width: 40%; }
-	.#{$namespace}-30	{ width: 30%; }
-	.#{$namespace}-25	{ width: 25%; }
-	.#{$namespace}-20	{ width: 20%; }
-	.#{$namespace}-10	{ width: 10%; }
-	.#{$namespace}-66	{ width: 66.666%; }
-	.#{$namespace}-33	{ width: 33.333%; }
-	.#{$namespace}-show	{ display: block; }
-	.#{$namespace}-hide	{ display: none; }
+	@each $percentage in $grid-percentages {
+		.#{ $namespace }-#{ floor( $percentage ) } { width: $percentage * 1%; }
+	}
+	
+	.#{$namespace}-show { display: block; }
+	.#{$namespace}-hide { display: none; }
 }
 
 @mixin grid-setup-container() {
