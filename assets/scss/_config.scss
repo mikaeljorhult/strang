@@ -10,8 +10,8 @@ $brand-color-3: #6C719E;
 // Typography
 $font-size: 16;
 $line-height: 26;
-$base-font-size: 16px;
-$base-line-height: 26px;
+$base-font-size: $font-size * 1px;
+$base-line-height: $line-height * 1px;
 $base-rhythm-unit: $base-line-height / $base-font-size * 1em;
 
 $font-size-1: 38;
@@ -37,6 +37,7 @@ $font-size-6-uppercase: $font-size-4 - 1;
 $grid-width: 1180px;
 $grid-gutter: 3em;
 $grid-percentages: 100, 90, 80, 75, 70, 66.666, 60, 50, 40, 33.333, 30, 25, 20, 10;
+
 
 // Sprites
 $logo-spacing: 2px;
