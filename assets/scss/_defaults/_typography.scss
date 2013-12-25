@@ -1,5 +1,9 @@
 @include establish-baseline;
 
+html {
+	background-color: $html-background-color;
+}
+
 body {
 	background-color: $body-background-color;
 	font-family: Georgia, "Times New Roman", serif;
