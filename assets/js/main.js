@@ -1,24 +1,14 @@
-(function($, $document, undefined) {
-	/*--- VARIABLES ---*/
-	
-	
-	
-	
-	
-	/*--- DELEGATE ---*/
-	
-	
-	
-	
-	
-	/*--- FUNCTIONS ---*/
-	
-	
-	
-	
-	
-	/*--- DOM READY ---*/
-	$document.ready(function() {
-		
-	});
-})(jQuery, jQuery(document));
+requirejs.config( {
+	paths: {
+		jquery: 'vendor/jquery.min'
+	},
+	shim: {
+		jquery: {
+			exports: '$'
+		}
+	}
+} );
+
+define( [ 'jquery' ], function( $ ) {
+	// Do magic.
+} );
