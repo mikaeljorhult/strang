@@ -1,5 +1,5 @@
 // Larger smartphones
-@media only screen and ( min-width: 480px ) {
+@include breakpoint( nth( $grid-breakpoints, 1 ) ) {
 	@include grid-setup( $namespace: column );
 	
 	.mobile-only {
@@ -8,16 +8,16 @@
 }
 
 // Tablets
-@media only screen and ( min-width: 768px ) {
+@include breakpoint( nth( $grid-breakpoints, 2 ) ) {
 	@include grid-setup( $namespace: mq1-column );
 }
 
 // Small desktops
-@media only screen and ( min-width: 1025px ) {
+@include breakpoint( nth( $grid-breakpoints, 3 ) ) {
 	@include grid-setup( $namespace: mq2-column );
 }
 
 // Larger desktops
-@media only screen and ( min-width: 1200px ) {
+@include breakpoint( nth( $grid-breakpoints, 4 ) ) {
 	@include grid-setup( $namespace: mq3-column );
 }

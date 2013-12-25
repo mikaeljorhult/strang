@@ -36,6 +36,7 @@ $font-size-6-uppercase: $font-size-4 - 1;
 // Grid configs
 $grid-width: 1180px;
 $grid-gutter: 3em;
+$grid-breakpoints: 481px, 769px, 1025, 1200px;
 $grid-percentages: 100, 90, 80, 75, 70, 66.666, 60, 50, 40, 33.333, 30, 25, 20, 10;
 
 
