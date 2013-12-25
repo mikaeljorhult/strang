@@ -3,8 +3,8 @@
 		.#{ $namespace }-#{ floor( $percentage ) } { width: $percentage * 1%; }
 	}
 	
-	.#{$namespace}-show { display: block; }
-	.#{$namespace}-hide { display: none; }
+	.#{ $namespace }-show { display: block; }
+	.#{ $namespace }-hide { display: none; }
 }
 
 @mixin grid-setup-container() {
@@ -36,16 +36,6 @@
 
 		> * {
 			padding-left: $half-gutter;
-		}
-	}
-}
-
-@mixin grid-adjust-wrap-width( $width: 95% ) {
-	.wrapper {
-		width: $width;
-
-		.wrapper {
-			width: auto;
 		}
 	}
 }
