@@ -12,6 +12,18 @@ module.exports = function(grunt) {
 			}
 		},
 		
+		// Settings for ImageOptim.
+		imageoptim: {
+			optimize: {
+				options: {
+					jpegMini: false,
+					imageAlpha: true,
+					quitAfter: true
+				},
+				src: [ 'assets/img/' ]
+			}
+		},
+		
 		// Setup watcher.
 		watch: {
 			options: {

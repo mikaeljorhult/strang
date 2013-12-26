@@ -8,13 +8,14 @@
     "url": "https://github.com/mikaeljorhult/strang"
   },
   "license": {
-	 "type": "MIT",
-	 "url": "http://mikaeljorhult.mit-license.org/"
+    "type": "MIT",
+    "url": "http://mikaeljorhult.mit-license.org/"
   },
   "devDependencies": {
     "grunt": "0.4.x",
-	"load-grunt-tasks": "0.2.x",
-	"grunt-contrib-watch": "0.5.x",
-    "grunt-contrib-compass": "0.7.x"
+    "load-grunt-tasks": "0.2.x",
+    "grunt-contrib-watch": "0.5.x",
+    "grunt-contrib-compass": "0.7.x",
+    "grunt-imageoptim": "1.4.x"
   }
 }
