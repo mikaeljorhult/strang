@@ -6,6 +6,7 @@ html {
 
 body {
 	background-color: $body-background-color;
+	color: $font-color;
 	font-family: Georgia, "Times New Roman", serif;
 	
 	&.debug {
