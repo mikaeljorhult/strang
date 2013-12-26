@@ -1,0 +1,20 @@
+{
+  "name": "strang-framework",
+  "description": "Small boilerplate for development.",
+  "version": "0.1.0",
+  "author": "Mikael Jorhult <mikael@jorhult.se>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mikaeljorhult/strang"
+  },
+  "license": {
+	 "type": "MIT",
+	 "url": "http://mikaeljorhult.mit-license.org/"
+  },
+  "devDependencies": {
+    "grunt": "0.4.x",
+	"load-grunt-tasks": "0.2.x",
+	"grunt-contrib-watch": "0.5.x",
+    "grunt-contrib-compass": "0.7.x"
+  }
+}
