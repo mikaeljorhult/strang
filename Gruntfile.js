@@ -29,8 +29,8 @@ module.exports = function(grunt) {
 			options: {
 				livereload: true,
 			},
-			scripts: {
-				files: ['asset/js/**/*.js'],
+			html: {
+				files: [ '*.html', '*.php' ],
 				tasks: [  ],
 				options: {
 					spawn: false,
@@ -39,6 +39,13 @@ module.exports = function(grunt) {
 			css: {
 				files: [ 'assets/scss/**/*.scss' ],
 				tasks: [ 'compass' ],
+				options: {
+					spawn: false,
+				}
+			},
+			js: {
+				files: ['asset/js/**/*.js'],
+				tasks: [  ],
 				options: {
 					spawn: false,
 				}
