@@ -1,7 +1,6 @@
 /* TEAM */
 	Name: Mikael Jorhult
 	Role: Developer
-	E-mail: mikael@jorhult.se
 	Twitter: @mikaejorhult
 	Location: Falun, Sweden
 
