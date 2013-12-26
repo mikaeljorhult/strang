@@ -1,6 +1,6 @@
 @import 'compass';
 @import 'config';
-@import '_mixins/mixins';
+@import '_mixins/**/*';
 
 @import '_defaults/normalize';
 @import '_defaults/typography';

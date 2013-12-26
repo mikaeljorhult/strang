@@ -1,7 +1,8 @@
 # Make sure UTF-8 is used.
 Encoding.default_external = "utf-8"
 
-# Load Compass extensions.
+# Load Sass and Compass extensions.
+require 'sass-globbing'
 require 'breakpoint'
 
 # Set this to the root of your project when deployed:
