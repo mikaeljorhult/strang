@@ -1,23 +1,18 @@
-// Larger smartphones
-@include breakpoint( nth( $grid-breakpoints, 1 ) ) {
-	@include grid-setup( $namespace: column );
-	
-	.mobile-only {
-		display: none;
+// TODO: Use index/counter, instead of variable, as soon as supported in Sass 3.3.
+// https://github.com/nex3/sass/issues/996
+
+$i: 0;
+
+@each $prefix, $breakpoint in $grid-breakpoints {
+	@include breakpoint( $breakpoint ) {
+		@include grid-setup( $namespace: $prefix );
+		
+		@if( $i == 0 ) {
+			.mobile-only {
+				display: none;
+			}
+		}
 	}
-}
-
-// Tablets
-@include breakpoint( nth( $grid-breakpoints, 2 ) ) {
-	@include grid-setup( $namespace: mq1-column );
-}
-
-// Small desktops
-@include breakpoint( nth( $grid-breakpoints, 3 ) ) {
-	@include grid-setup( $namespace: mq2-column );
-}
-
-// Larger desktops
-@include breakpoint( nth( $grid-breakpoints, 4 ) ) {
-	@include grid-setup( $namespace: mq3-column );
+	
+	$i: $i + 1;
 }
