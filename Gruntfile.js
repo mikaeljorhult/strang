@@ -26,9 +26,6 @@ module.exports = function(grunt) {
 		
 		// Setup watcher.
 		watch: {
-			options: {
-				livereload: true,
-			},
 			html: {
 				files: [ '*.html', '*.php' ],
 				tasks: [  ],
@@ -36,18 +33,25 @@ module.exports = function(grunt) {
 					spawn: false,
 				}
 			},
-			css: {
+			scss: {
 				files: [ 'assets/scss/**/*.scss' ],
-				tasks: [ 'compass' ],
+				tasks: [ 'compass', 'autoprefixer' ],
 				options: {
 					spawn: false,
 				}
 			},
-			js: {
-				files: ['asset/js/**/*.js'],
+			css: {
+				files: [ 'assets/css/**/*.css' ],
 				tasks: [  ],
 				options: {
-					spawn: false,
+					livereload: true
+				}
+			},
+			js: {
+				files: [ 'assets/js/**/*.js' ],
+				tasks: [  ],
+				options: {
+					livereload: true
 				}
 			}
 		}
