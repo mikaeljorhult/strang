@@ -12,10 +12,10 @@
     "url": "http://mikaeljorhult.mit-license.org/"
   },
   "devDependencies": {
-    "grunt": "0.4.x",
-    "load-grunt-tasks": "0.2.x",
-    "grunt-contrib-watch": "0.5.x",
-    "grunt-contrib-compass": "0.7.x",
-    "grunt-imageoptim": "1.4.x"
+    "gulp": "^3.8.1",
+    "gulp-autoprefixer": "0.0.7",
+    "gulp-compass": "^1.1.9",
+    "gulp-livereload": "^2.1.0",
+    "gulp-load-plugins": "^0.5.1"
   }
 }
