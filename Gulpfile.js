@@ -1,9 +1,9 @@
 var gulp = require( 'gulp' ),
-	livereload = require( 'gulp-livereload' ),
 	plugins = require( 'gulp-load-plugins' )();
 
 gulp.task( 'styles', function() {
 	gulp.src( './assets/scss/*.scss' )
+		.pipe( plugins.plumber() )
 		.pipe( plugins.compass( {
 			config_file: './config.rb',
 			css: 'assets/css',
@@ -13,10 +13,22 @@ gulp.task( 'styles', function() {
 		.pipe( gulp.dest( 'assets/css' ) );
 } );
 
+gulp.task( 'sprites', function() {
+	return gulp.src( './assets/img/svg/*.svg' )
+		.pipe( plugins.svgSymbols( {
+			svgId: '%f',
+			css: false
+		} ) )
+		.pipe( gulp.dest( './assets/img' ) );
+} );
+
 gulp.task( 'watch', function() {
-	livereload.listen();
+	plugins.livereload.listen();
+	
+	gulp.watch( './assets/scss/**/*.scss', [ 'styles' ] );
+	gulp.watch( './assets/img/svg/*.svg', [ 'sprites' ] );
 	
 	gulp.watch( [ './**/*.html', './**/*.php' , './assets/css/*.css' ] ).on( 'change', function( file ) {
-		livereload.changed( file.path );
+		plugins.livereload.changed( file.path );
 	} );
 } );
