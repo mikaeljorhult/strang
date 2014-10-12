@@ -1,5 +1,5 @@
 @mixin grid-setup( $namespace ) {
-	@each $percentage in $grid-percentages {
+	@each $percentage in map-get( $strang-grids, percentages ) {
 		.#{ $namespace }-#{ floor( $percentage ) } { width: $percentage * 1%; }
 	}
 	
@@ -8,22 +8,22 @@
 }
 
 @mixin grid-setup-container() {
-	$half-gutter: $grid-gutter / 2;
+	$half-gutter: map-get( $strang-grids, gutter ) / 2;
 
 	.wrapper {
-		max-width: $grid-width;
+		max-width: map-get( $strang-grids, width );
 		margin: 0 auto;
 	}
 
 	.grids {
 		overflow: hidden;
 		clear: both;
-		margin-left: -$grid-gutter;
+		margin-left: map-get( $strang-grids, gutter ) * -1;
 		
 		> * {
 			width: 100%;
 			float: left;
-			padding-left: $grid-gutter;
+			padding-left: map-get( $strang-grids, gutter );
 	
 			*:first-child {
 				margin-top: 0;
@@ -32,10 +32,10 @@
 	}
 
 	.half-gutter {
-		margin-left: -$half-gutter;
+		margin-left: ( map-get( $strang-grids, gutter ) / 2 ) * -1;
 
 		> * {
-			padding-left: $half-gutter;
+			padding-left: map-get( $strang-grids, gutter ) / 2;
 		}
 	}
 }

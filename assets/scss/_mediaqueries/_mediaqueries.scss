@@ -3,7 +3,7 @@
 
 $i: 0;
 
-@each $prefix, $breakpoint in $grid-breakpoints {
+@each $prefix, $breakpoint in map-get( $strang-grids, breakpoints ) {
 	@include breakpoint( $breakpoint ) {
 		@include grid-setup( $namespace: $prefix );
 		
