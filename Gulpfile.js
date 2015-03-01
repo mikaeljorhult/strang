@@ -18,9 +18,13 @@ gulp.task( 'scripts', function() {
 gulp.task( 'styles', function() {
 	gulp.src( './assets/scss/*.scss' )
 		.pipe( plugins.plumber() )
-		.pipe( plugins.sass() )
+		.pipe( plugins.sourcemaps.init() )
+		.pipe( plugins.sass( {
+			errLogToConsole: true
+		} ) )
 		.pipe( plugins.autoprefixer( '> 1%', 'last 2 versions', 'Firefox ESR', 'Opera 12.1' ) )
-		.pipe( gulp.dest( 'assets/css' ) );
+		.pipe( plugins.sourcemaps.write( './' ) )
+		.pipe( gulp.dest( './assets/css' ) );
 } );
 
 gulp.task( 'sprites', function() {
