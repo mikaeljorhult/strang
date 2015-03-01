@@ -1,7 +1,7 @@
-@import 'compass';
-@import 'breakpoint';
+@import '_libraries/_breakpoint';
+
 @import 'config';
-@import '_mixins/**/*';
+@import '_mixins/_grid';
 
 @import '_defaults/normalize';
 @import '_defaults/typography';
