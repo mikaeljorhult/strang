@@ -42,6 +42,7 @@ gulp.task( 'sprites', function() {
 gulp.task( 'watch', function() {
 	plugins.livereload.listen();
 	
+	gulp.watch( [ './assets/js/**/*.js', '!./assets/js/main.min.js' ], [ 'scripts' ] );
 	gulp.watch( './assets/scss/**/*.scss', [ 'styles' ] );
 	gulp.watch( './assets/img/svg/*.svg', [ 'sprites' ] );
 	
