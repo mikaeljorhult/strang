@@ -1,7 +1,7 @@
 {
   "name": "strang-framework",
   "description": "Simple boilerplate for frontend web development.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "Mikael Jorhult <mikael@jorhult.se>",
   "repository": {
     "type": "git",
@@ -12,12 +12,15 @@
     "url": "http://mikaeljorhult.mit-license.org/"
   },
   "devDependencies": {
-    "gulp": "3.8.x",
-    "gulp-autoprefixer": "0.0.x",
-    "gulp-compass": "1.1.x",
-    "gulp-livereload": "2.1.x",
-    "gulp-load-plugins": "0.5.x",
-    "gulp-plumber": "0.6.x",
-    "gulp-svg-symbols": "0.1.x"
+    "gulp": "^3.8.10",
+    "gulp-autoprefixer": "^2.1.0",
+    "gulp-compass": "^2.0.3",
+    "gulp-livereload": "^3.4.0",
+    "gulp-load-plugins": "^0.8.0",
+	"gulp-plumber": "^0.6.6",
+	"gulp-requirejs-optimize": "^0.1.1",
+	"gulp-rename": "^1.2.0",
+    "gulp-svg-sprites": "^1.1.1",
+	"gulp-uglify": "^1.0.2"
   }
 }
