@@ -29,9 +29,12 @@ gulp.task( 'styles', function() {
 
 gulp.task( 'sprites', function() {
 	return gulp.src( './assets/img/svg/*.svg' )
-		.pipe( plugins.svgSymbols( {
-			svgId: '%f',
-			css: false
+		.pipe( plugins.svgSprites( {
+			mode: 'symbols',
+			preview: false,
+			svg: {
+				symbols: 'icons.svg'
+			}
 		} ) )
 		.pipe( gulp.dest( './assets/img' ) );
 } );
