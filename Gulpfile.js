@@ -18,11 +18,7 @@ gulp.task( 'scripts', function() {
 gulp.task( 'styles', function() {
 	gulp.src( './assets/scss/*.scss' )
 		.pipe( plugins.plumber() )
-		.pipe( plugins.compass( {
-			config_file: './config.rb',
-			css: 'assets/css',
-			sass: 'assets/scss'
-		} ) )
+		.pipe( plugins.sass() )
 		.pipe( plugins.autoprefixer( '> 1%', 'last 2 versions', 'Firefox ESR', 'Opera 12.1' ) )
 		.pipe( gulp.dest( 'assets/css' ) );
 } );
