@@ -1,6 +1,20 @@
 var gulp = require( 'gulp' ),
 	plugins = require( 'gulp-load-plugins' )();
 
+gulp.task( 'scripts', function() {
+	return gulp.src( './assets/js/main.js' )
+		.pipe( plugins.plumber() )
+		.pipe( plugins.requirejsOptimize( {
+			baseUrl: './assets/js',
+			include: [ 'require.js', 'main' ],
+			insertRequire: [ 'main' ],
+			wrap: true
+		} ) )
+		.pipe( plugins.uglify() )
+		.pipe( plugins.rename( { extname: '.min.js' } ) )
+		.pipe( gulp.dest( './assets/js' ) );
+} );
+
 gulp.task( 'styles', function() {
 	gulp.src( './assets/scss/*.scss' )
 		.pipe( plugins.plumber() )
