@@ -41,10 +41,6 @@
 	}
 }
 
-.bottom-trailer {
-	@include margin-trailer(1);
-}
-
 .hide-text {
 	overflow: hidden;
 	text-indent: 100%;
