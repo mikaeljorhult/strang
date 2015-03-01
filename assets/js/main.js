@@ -1,14 +1,3 @@
-requirejs.config( {
-	paths: {
-		jquery: 'vendor/jquery.min'
-	},
-	shim: {
-		jquery: {
-			exports: '$'
-		}
-	}
-} );
-
-define( [ 'jquery' ], function( $ ) {
+define( [ 'vendor/jquery.min' ], function( $ ) {
 	// Do magic.
 } );
