@@ -41,3 +41,9 @@ $strang-grids: (
 // Sprites
 $logo-spacing: 2px;
 //@import "logo/*.png";
+
+// Setup Sanitize.
+$html-background-color: map-get( $strang-colors, html );
+$root-font-family: Georgia, "Times New Roman", serif;
+$root-font-size: map-get( $strang-fonts, base ) * 1px;
+$root-line-height: map-get( $strang-fonts, line ) / map-get( $strang-fonts, base );

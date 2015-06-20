@@ -1,11 +1,6 @@
-html {
-	background-color: map-get( $strang-colors, html );
-}
-
 body {
 	background-color: map-get( $strang-colors, body );
 	color: map-get( $strang-colors, font );
-	font-family: Georgia, "Times New Roman", serif;
 }
 
 a {
@@ -48,10 +43,10 @@ h6,
 }
 
 h1, h2, h3, h4, h5, h6 {
-	& + p,
-	& + form,
-	& + ul,
-	& + ol {
+	+ p,
+	+ form,
+	+ ul,
+	+ ol {
 		margin-top: 0;
 	}
 	
